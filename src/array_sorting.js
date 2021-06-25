@@ -26,3 +26,13 @@ const findSmallestElement = inputArray => {
 }
 
 module.exports = { selectionSort }
+
+// keep track of the unsorted starting index
+// while loop to go thru each element from unsorted index to end of input array
+// find smallest index (helper)
+// add unsorted index to smallest index
+// get smallest element at smallest index
+// splice(smallestIndex, 1) to remove that element
+// splice(unsorted index, 0, smallest element) to insert the smallest item, 0 in the middle to delete/remove no items
+// increment the unsorted started index by 1
+// end of while loop return the now sorted array
