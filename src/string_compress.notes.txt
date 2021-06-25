@@ -1,0 +1,15 @@
+Question #3: Compressing Strings
+
+Write an algorithm that takes a string with repeated characters and compresses them, using a number to show how many times the repeated character has been compressed. For instance, aaa would be written as 3a. Solve the problem with and without recursion. Example
+
+Input: "aaabccdddda"
+
+Output: "3ab2c4da"
+
+---
+
+We're looking for repeating characters in a row so not the total number of "a's" but the total number of "a's" in a row will be converted to a number+letter combination.
+
+My initial reaction would be to use a loop in conjunction with a counter; each time you get repeated characters you increment the counter. Then when you find a non-repeated character you append the counter number and the previous letter to your output string.
+
+Doing this recursively is not as intuitive for me. Perhaps you can increment the counter per recursive call added to the stack and then return to the string after you encounter a non-repeated element. That doesn't feel as elegant as a simple loop but could work.
