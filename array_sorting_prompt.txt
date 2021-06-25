@@ -1,0 +1,45 @@
+// out of all of the sorting functions in the prompt
+// selection sort is the most intuitive to me in that you
+// find the smallest element, pluck it out, and move it to the beginning
+// of the unsorted part of the array
+
+// you need to make the changes in place so the array is a single array
+// but it has two parts: the sorted part at the beginning and then the unsorted part
+
+Function selectionSort(inputArray) {
+ // optimization to return a single or 0 element array as that is already sorted
+ If (inputArray.length < 2) return inputArray
+
+ // keep track of the place where the sorted part meets the unsorted part of the array
+ Let sortedEndingIndex = 0
+
+ // do a loop to go thru all the elements (of the unsorted part)
+ While (sortedEndingIndex < inputArray.length) {
+	// find the index of the smallest index in the unsorted part of the array
+	let smallestIndex = findSmallestIndex(inputArray.slice(sortedEndingIndex)) + sortedEndingIndex
+
+	// put the smallest element at the end of the sorted part
+  // first copy the smallest value at the smalles value index
+	const smallestElement = inputArray[smallestIndex]
+
+	// remove the smallest element from the unsorted part
+	inputArray.splice(smallestIndex, 1)
+
+	// add to the end of the sorted part of the array
+	inputArray.splice(sortedEndingIndex, 0, smallestElement)
+
+	// here we should have sorted a single element to the right place
+	// update the sortedEndingIndex since we added one new element to the sorted part
+	sortedEndingIndex += 1
+ }
+ Return inputArray
+}
+
+// returns the index of the smallest element in the input array
+Function findSmallestIndex(inputArray) {
+ Let smallestElementIndex = 0
+ inputArray.forEach((element, index) => {
+  If (element < inputArray[smallestElementIndex]) smallestElementIndex = index
+ }
+ Return smallestElementIndex
+}
