@@ -1,0 +1,17 @@
+Question #4: Checking for Uniqueness
+
+Write an algorithm that determines whether all the elements in a string are unique. You may not convert the string into an array or use array methods to solve this problem. The algorithm should return a boolean. Example
+
+Input: "hello"
+
+Output: false
+
+Input: "copyright"
+
+Output: true
+
+---
+
+This one seems like it could be solved using an array and set and comparing the lengths of the two; if they are the same length then all characters are unique. We could also use a loop to go through each character one at a time in conjunction with a hashset/object to see if that character has been found previously.
+
+I'd probably go with the array+set built-in methods as those are short, easy to write, and likely highly optimized within JS.
