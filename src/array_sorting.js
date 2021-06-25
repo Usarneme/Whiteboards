@@ -1,5 +1,5 @@
 // Selection Sort
-// Repeatedly find the minimum element in the unsorted part of an array and put it at the beginning of sorted part of the array
+// Repeatedly find the minimum element in the unsorted part of an array and put it at the end of sorted part of the array
 
 const selectionSort = inputArray => {
   if (inputArray.length < 2) return inputArray
