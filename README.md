@@ -4,6 +4,27 @@ A repository to hold solutions files for whiteboarding problems
 
 ---
 
+## Requirements
+
+1. Node (https://nodejs.org/en/download/)[https://nodejs.org/en/download/]
+2. npm (https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)[https://docs.npmjs.com/downloading-and-installing-node-js-and-npm]
+
+---
+
+## Installation & Setup
+
+1. Download this repository with `git clone https://github.com/Usarneme/Whiteboards`
+2. Enter directory with `cd Whiteboards`
+3. Install all dependencies with `npm i`
+
+---
+
+## Testing
+
+Jest tests suite included in the __tests__ folder. To run tests, after installing dependencies, run `npm run test` from the project root.
+
+---
+
 ## Problem Set
 
 ### Question #1: Turning Strings to URLs
@@ -16,6 +37,7 @@ Example
 Input: "Jasmine Ann Jones"
 
 Output: "Jasmine%20Ann%20Jones"
+
 ---
 
 ### Question #2: Array Deduping
@@ -26,6 +48,7 @@ Example
 Input: [7, 9, "hi", 12, "hi" 7, 53]
 
 Output: [7, 9, "hi", 12, 53]
+
 ---
 
 ### Question #3: Compressing Strings
@@ -36,6 +59,7 @@ Example
 Input: "aaabccdddda"
 
 Output: "3ab2c4da"
+
 ---
 
 ### Question #4: Checking for Uniqueness
@@ -50,6 +74,7 @@ Output: false
 Input: "copyright"
 
 Output: true
+
 ---
 
 ### Question #5: Array Sorting
@@ -69,27 +94,6 @@ Example
 Input: [9, 2, 7, 12]
 
 Output: [2, 7, 9, 12]
-
----
-
-## Requirements
-
-1. Node (https://nodejs.org/en/download/)[https://nodejs.org/en/download/]
-2. npm (https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)[https://docs.npmjs.com/downloading-and-installing-node-js-and-npm]
-
----
-
-## Installation & Setup
-
-1. Download this repository with `git clone https://github.com/Usarneme/Whiteboards`
-2. Enter directory with `cd Whiteboards`
-3. Install all dependencies with `npm i`
-
----
-
-## Testing
-
-Jest tests suite included in the __tests__ folder. To run tests, after installing dependencies, run `npm run test` from the project root.
 
 ---
 
