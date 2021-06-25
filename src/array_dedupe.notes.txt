@@ -1,0 +1,15 @@
+Question #2: Array Deduping
+
+Write an algorithm that removes duplicates from an array. Do not use a function like filter() to solve this. Once you have solved the problem, demonstrate how it can be solved with filter(). Solve the problem with and without recursion. Example
+
+Input: [7, 9, "hi", 12, "hi" 7, 53]
+
+Output: [7, 9, "hi", 12, 53]
+
+---
+
+Removing duplicate items in an array always makes me think of the data structure designed to do just that: sets. JS has a couple helper functions for creating sets from arrays and vice versa so a pretty simply way of tackling this would be to use those; specifically: return Array.from(new Set(inputArray)) (or you could use spread to return [...new Set(inputArray)]). That would by my initial approach.
+
+If I were further constrained and not allowed to use Sets things get a bit more complicated. This would require some looping through each item to look for duplicates. If I had to do this I would create an object {} and for each element in the array create a key/entry in the object and add the element to a new, output array if the key did not already exist in the object.
+
+If we could use filter then something like outputArray = inputArray.filter((item, index) => inputArray.indexOf(item) === index) to only build up the new array with items whose index matches the currently looped/filtered item (thus ignoring the same item in a different position in the input array).
