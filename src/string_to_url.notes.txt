@@ -1,0 +1,23 @@
+Question #1: Turning Strings to URLs
+
+URLs cannot have spaces. Instead, all spaces in a string are replaced with %20. Write an algorithm that replaces all spaces in a string with %20.
+
+You may not use the replace() method or regular expressions to solve this problem. Solve the problem with and without recursion.
+
+Example
+Input: "Jasmine Ann Jones"
+Output: "Jasmine%20Ann%20Jones"
+
+---
+
+NOTES:
+
+My instinct would be to use replace() or RegEx since those are likely optimized solutions for this problem. Barring those, I would simply return encodeURI(string) since this is also a built-in method that is likely very optimized for solving this exact problem.
+
+If none of the built-in methods are allowed, this could be accomplished with a loop and if statement; checking each character in a string to see if it's a space then either splicing it in place or building up a new output string but with %20 instead of the spaces.
+
+More simply than the above you could do String.split(" ") to create an array with no spaces then Array.join("%20") to put the string back together with the spaces replaced. This would be my solution of choice given the restrictions.
+
+You could also use indexOf(" ") in combination with substring() to build up a new string; appending %20 then skipping over the space (or splicing out the word from the original string).
+
+If you wanted to use recursion instead of a loop or the split+join solution we'd need to figure out the base and recursive cases. My intuition is this isn't a good problem to solve recursively as it will be emulating a loop, going character by character which will likely take more memory and not be any faster than a loop. Likely I'd need to traverse the string, look at the character, if it is a space replace it with %20 otherwise return the string then recurse by calling the function again on the next character.

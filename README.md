@@ -6,8 +6,8 @@ A repository to hold solutions files for whiteboarding problems
 
 ## Requirements
 
-1. Node (https://nodejs.org/en/download/)[https://nodejs.org/en/download/]
-2. npm (https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)[https://docs.npmjs.com/downloading-and-installing-node-js-and-npm]
+1. Node [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
+2. npm [https://docs.npmjs.com/downloading-and-installing-node-js-and-npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 
 ---
 
@@ -21,7 +21,7 @@ A repository to hold solutions files for whiteboarding problems
 
 ## Testing
 
-Jest tests suite included in the __tests__ folder. To run tests, after installing dependencies, run `npm run test` from the project root.
+Jest tests suite included in the \_\_tests\_\_ folder. To run tests, after installing dependencies, run `npm run test` from the project root.
 
 ---
 
